@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to InstaFinder! Login or signup today.</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+ <style type="text/css">
+html, 
+body{
+  height: 100%;
+}
+body  {
+    background-image: url("bgd4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+</style>
+
+  <body>
+
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        <h2>LOG IN</h2>  
+
+  <div class="text1">
+  <p>See where your friends going.</p> 
+  <p>Log in now!</p>
+ </div>
+  <button class="btn_login" onclick="cambiar_login()">LOG IN</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>SIGN UP</h2>
+
+ <div class="text1">
+  <p>Don't have an account yet? </p>
+   <p>Sign up now!</p>
+
+ </div>
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="bgd3.jpg">
+       </div>
+       
+    </div>
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="bgd3.jpg">
+       </div>
+  <form action="log.php" method="post">
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Username" name="username" />
+ <input type="password" placeholder="Password" name="password" />
+
+ <button type="submit" name="login" class="btn_login" onclick="cambiar_login()">LOG IN</button>
+  </form>
+ </div>
+
+  <form action="log.php" method="post">
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+<h2>SIGN UP</h2>
+<input type="text" placeholder="Username" name="username"/>
+<input type="text" placeholder="Name" name="name"/>
+<input type="password" placeholder="Password"  name="password"/>
+<input type="password" placeholder="Confirm Password"  name="passwords"/>
+<button type="submit" name="reg" class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+ </form>
+  </div>
+
+    </div>  
+  </div>
+ </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
